@@ -1,0 +1,66 @@
+{
+    "units": [{
+            "id": 1,
+            "languageId": 1,
+            "metricSystem": 0,
+            "singular": "",
+            "plural": "",
+            "abbreviationSingle": "",
+            "abbreviationPlural": ""
+        },
+        {
+            "id": 2,
+            "languageId": 1,
+            "metricSystem": 0,
+            "singular": "pound",
+            "plural": "pounds",
+            "abbreviationSingle": "lb.",
+            "abbreviationPlural": "lbs."
+        },
+        {
+            "id": 3,
+            "languageId": 1,
+            "metricSystem": 0,
+            "singular": "ounce",
+            "plural": "ounces",
+            "abbreviationSingle": "oz.",
+            "abbreviationPlural": "oz."
+        },
+        {
+            "id": 4,
+            "languageId": 1,
+            "metricSystem": 0,
+            "singular": "pint",
+            "plural": "pints",
+            "abbreviationSingle": "pt.",
+            "abbreviationPlural": "pts."
+        },
+        {
+            "id": 5,
+            "languageId": 1,
+            "metricSystem": 0,
+            "singular": "cup",
+            "plural": "cups",
+            "abbreviationSingle": "c.",
+            "abbreviationPlural": "c."
+        },
+        {
+            "id": 6,
+            "languageId": 1,
+            "metricSystem": 0,
+            "singular": "tablespoon",
+            "plural": "tablespoons",
+            "abbreviationSingle": "tbsp.",
+            "abbreviationPlural": "tbsps."
+        },
+        {
+            "id": 7,
+            "languageId": 1,
+            "metricSystem": 0,
+            "singular": "teaspoon",
+            "plural": "teaspoons",
+            "abbreviationSingle": "tsp.",
+            "abbreviationPlural": "tsps."
+        }
+    ]
+}

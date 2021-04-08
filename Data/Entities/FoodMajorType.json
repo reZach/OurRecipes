@@ -1,0 +1,58 @@
+{
+    "foodMajorTypes": [{
+            "id": 1,
+            "foodGroupId": 1,
+            "name": "Fish"
+        },
+        {
+            "id": 2,
+            "foodGroupId": 1,
+            "name": "Shellfish"
+        },
+        {
+            "id": 3,
+            "foodGroupId": 1,
+            "name": "Other aquatic animals"
+        },
+        {
+            "id": 4,
+            "foodGroupId": 2,
+            "name": "Dairy"
+        },
+        {
+            "id": 5,
+            "foodGroupId": 2,
+            "name": "Game"
+        },
+        {
+            "id": 6,
+            "foodGroupId": 2,
+            "name": "Meat-poultry"
+        },
+        {
+            "id": 7,
+            "foodGroupId": 2,
+            "name": "Eggs"
+        },
+        {
+            "id": 8,
+            "foodGroupId": 3,
+            "name": "Oils-sugars"
+        },
+        {
+            "id": 9,
+            "foodGroupId": 3,
+            "name": "Produce"
+        },
+        {
+            "id": 10,
+            "foodGroupId": 3,
+            "name": "Grains-beans"
+        },
+        {
+            "id": 11,
+            "foodGroupId": 3,
+            "name": "Nuts-seeds"
+        }
+    ]
+}

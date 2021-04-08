@@ -1,0 +1,19 @@
+{
+    "foodGroups": [{
+            "id": 1,
+            "name": "Aquatic animals"
+        },
+        {
+            "id": 2,
+            "name": "Land animals"
+        },
+        {
+            "id": 3,
+            "name": "Plants"
+        },
+        {
+            "id": 4,
+            "name": "Other"
+        }
+    ]
+}

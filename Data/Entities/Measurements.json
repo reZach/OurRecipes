@@ -1,3 +1,56 @@
 {
-    "a": true
+    "measurements": [{
+            "id": 1,
+            "unitId": 1,
+            "amount": 0.5,
+            "maxAmount": null
+        }, {
+            "id": 2,
+            "unitId": 1,
+            "amount": 1,
+            "maxAmount": null
+        },
+        {
+            "id": 3,
+            "unitId": 1,
+            "amount": 2,
+            "maxAmount": null
+        },
+        {
+            "id": 4,
+            "unitId": 1,
+            "amount": 3,
+            "maxAmount": null
+        },
+        {
+            "id": 5,
+            "unitId": 1,
+            "amount": 4,
+            "maxAmount": null
+        },
+        {
+            "id": 6,
+            "unitId": 1,
+            "amount": 5,
+            "maxAmount": null
+        },
+        {
+            "id": 7,
+            "unitId": 1,
+            "amount": 6,
+            "maxAmount": null
+        },
+        {
+            "id": 8,
+            "unitId": 1,
+            "amount": 7,
+            "maxAmount": null
+        },
+        {
+            "id": 9,
+            "unitId": 1,
+            "amount": 8,
+            "maxAmount": null
+        }
+    ]
 }

@@ -1,14 +1,17 @@
 ﻿using OurRecipes.Business;
 using System;
+using System.Threading.Tasks;
 
 namespace OurRecipes.Driver
 {
     class Program
     {
-        static void Main(string[] args)
+        static async Task<int> Main(string[] args)
         {
             Client client = new Client();
-            client.Main();
+            await client.Main();
+
+            return 0;
         }
     }
 }

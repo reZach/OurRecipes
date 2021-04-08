@@ -1,0 +1,83 @@
+{
+    "foodSubTypes": [{
+            "id": 1,
+            "foodMajorTypeId": 1,
+            "name": "Siluriformes (catfish)"
+        },
+        {
+            "id": 2,
+            "foodMajorTypeId": 1,
+            "name": "Other fish"
+        },
+        {
+            "id": 3,
+            "foodMajorTypeId": 2,
+            "name": "Mollusks"
+        },
+        {
+            "id": 4,
+            "foodMajorTypeId": 2,
+            "name": "Crustaceans"
+        },
+        {
+            "id": 5,
+            "foodMajorTypeId": 4,
+            "name": "Solid/semi-solid dairy products"
+        },
+        {
+            "id": 6,
+            "foodMajorTypeId": 4,
+            "name": "Fluid milk"
+        },
+        {
+            "id": 7,
+            "foodMajorTypeId": 6,
+            "name": "Meat"
+        },
+        {
+            "id": 8,
+            "foodMajorTypeId": 6,
+            "name": "Poultry"
+        },
+        {
+            "id": 9,
+            "foodMajorTypeId": 7,
+            "name": "Shell eggs"
+        },
+        {
+            "id": 10,
+            "foodMajorTypeId": 7,
+            "name": "Egg products"
+        },
+        {
+            "id": 11,
+            "foodMajorTypeId": 9,
+            "name": "Fruits"
+        },
+        {
+            "id": 12,
+            "foodMajorTypeId": 9,
+            "name": "Vegetables"
+        },
+        {
+            "id": 13,
+            "foodMajorTypeId": 10,
+            "name": "Grains"
+        },
+        {
+            "id": 14,
+            "foodMajorTypeId": 10,
+            "name": "Beans"
+        },
+        {
+            "id": 15,
+            "foodMajorTypeId": 11,
+            "name": "Nuts"
+        },
+        {
+            "id": 16,
+            "foodMajorTypeId": 11,
+            "name": "Seeds"
+        }
+    ]
+}

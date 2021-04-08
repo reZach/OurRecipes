@@ -2,6 +2,7 @@
 using OurRecipes.Business.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace OurRecipes.Business
 {
@@ -12,17 +13,18 @@ namespace OurRecipes.Business
 
         }
 
-        public async void Main()
+        public async Task<int> Main()
         {
             GitHubClient githubClient = new GitHubClient(new ProductHeaderValue("OurRecipes"))
             {
-                Credentials = new Credentials("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")
+                Credentials = new Credentials("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")
             };
 
             IReadOnlyList<RepositoryContent> results;
 
             try
             {
+                var user = await githubClient.User.Get("reZach");
                 results = await githubClient.Repository.Content.GetAllContents("reZach", "OurRecipes", "Data/Entities/Measurements.json");
             }
             catch (Exception ex)
@@ -30,6 +32,8 @@ namespace OurRecipes.Business
 
                 
             }
+
+            return 0;
         }
     }
 }

@@ -1,0 +1,87 @@
+{
+    "times": [{
+            "id": 1,
+            "days": 0,
+            "hours": 0,
+            "minutes": 5,
+            "seconds": 0
+        },
+        {
+            "id": 2,
+            "days": 0,
+            "hours": 0,
+            "minutes": 10,
+            "seconds": 0
+        },
+        {
+            "id": 3,
+            "days": 0,
+            "hours": 0,
+            "minutes": 15,
+            "seconds": 0
+        },
+        {
+            "id": 4,
+            "days": 0,
+            "hours": 0,
+            "minutes": 20,
+            "seconds": 0
+        },
+        {
+            "id": 5,
+            "days": 0,
+            "hours": 0,
+            "minutes": 25,
+            "seconds": 0
+        },
+        {
+            "id": 6,
+            "days": 0,
+            "hours": 0,
+            "minutes": 30,
+            "seconds": 0
+        },
+        {
+            "id": 7,
+            "days": 0,
+            "hours": 0,
+            "minutes": 35,
+            "seconds": 0
+        },
+        {
+            "id": 8,
+            "days": 0,
+            "hours": 0,
+            "minutes": 40,
+            "seconds": 0
+        },
+        {
+            "id": 9,
+            "days": 0,
+            "hours": 0,
+            "minutes": 45,
+            "seconds": 0
+        },
+        {
+            "id": 10,
+            "days": 0,
+            "hours": 0,
+            "minutes": 50,
+            "seconds": 0
+        },
+        {
+            "id": 11,
+            "days": 0,
+            "hours": 0,
+            "minutes": 55,
+            "seconds": 0
+        },
+        {
+            "id": 12,
+            "days": 0,
+            "hours": 1,
+            "minutes": 0,
+            "seconds": 0
+        }
+    ]
+}

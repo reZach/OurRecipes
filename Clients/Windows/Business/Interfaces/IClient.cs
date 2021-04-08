@@ -1,7 +1,9 @@
-﻿namespace OurRecipes.Business.Interfaces
+﻿using System.Threading.Tasks;
+
+namespace OurRecipes.Business.Interfaces
 {
     public interface IClient
     {
-        void Main();
+        Task<int> Main();
     }
 }
