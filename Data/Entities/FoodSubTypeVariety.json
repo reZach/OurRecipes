@@ -1,0 +1,189 @@
+{
+    "foodSubTypeVarieties": [{
+            "id": 1,
+            "foodSubTypeId": 3,
+            "parentFoodSubTypeVarietyId": null,
+            "name": "Bivalve"
+        },
+        {
+            "id": 2,
+            "foodSubTypeId": 3,
+            "parentFoodSubTypeVarietyId": null,
+            "name": "Non-bivalve"
+        },
+        {
+            "id": 3,
+            "foodSubTypeId": 7,
+            "parentFoodSubTypeVarietyId": null,
+            "name": "Beef"
+        },
+        {
+            "id": 4,
+            "foodSubTypeId": 7,
+            "parentFoodSubTypeVarietyId": null,
+            "name": "Pork"
+        },
+        {
+            "id": 5,
+            "foodSubTypeId": 7,
+            "parentFoodSubTypeVarietyId": null,
+            "name": "Other meat"
+        },
+        {
+            "id": 6,
+            "foodSubTypeId": 8,
+            "parentFoodSubTypeVarietyId": null,
+            "name": "Chicken"
+        },
+        {
+            "id": 7,
+            "foodSubTypeId": 8,
+            "parentFoodSubTypeVarietyId": null,
+            "name": "Turkey"
+        },
+        {
+            "id": 8,
+            "foodSubTypeId": 8,
+            "parentFoodSubTypeVarietyId": null,
+            "name": "Other poultry"
+        },
+        {
+            "id": 9,
+            "foodSubTypeId": 11,
+            "parentFoodSubTypeVarietyId": null,
+            "name": "Tropical"
+        },
+        {
+            "id": 10,
+            "foodSubTypeId": 11,
+            "parentFoodSubTypeVarietyId": null,
+            "name": "Sub-tropical"
+        },
+        {
+            "id": 11,
+            "foodSubTypeId": 11,
+            "parentFoodSubTypeVarietyId": null,
+            "name": "Small"
+        },
+        {
+            "id": 12,
+            "foodSubTypeId": 11,
+            "parentFoodSubTypeVarietyId": null,
+            "name": "Stone"
+        },
+        {
+            "id": 13,
+            "foodSubTypeId": 11,
+            "parentFoodSubTypeVarietyId": null,
+            "name": "Pome"
+        },
+        {
+            "id": 14,
+            "foodSubTypeId": 11,
+            "parentFoodSubTypeVarietyId": null,
+            "name": "Melons"
+        },
+        {
+            "id": 15,
+            "foodSubTypeId": 12,
+            "parentFoodSubTypeVarietyId": null,
+            "name": "Fungi"
+        },
+        {
+            "id": 16,
+            "foodSubTypeId": 12,
+            "parentFoodSubTypeVarietyId": null,
+            "name": "Sprouts"
+        },
+        {
+            "id": 17,
+            "foodSubTypeId": 12,
+            "parentFoodSubTypeVarietyId": null,
+            "name": "Root/underground"
+        },
+        {
+            "id": 18,
+            "foodSubTypeId": 12,
+            "parentFoodSubTypeVarietyId": null,
+            "name": "Seeded vegetables"
+        },
+        {
+            "id": 19,
+            "foodSubTypeId": 12,
+            "parentFoodSubTypeVarietyId": null,
+            "name": "Herbs"
+        },
+        {
+            "id": 20,
+            "foodSubTypeId": 12,
+            "parentFoodSubTypeVarietyId": null,
+            "name": "Vegetable row crops"
+        },
+        {
+            "id": 21,
+            "foodSubTypeId": null,
+            "parentFoodSubTypeVarietyId": 17,
+            "name": "Roots"
+        },
+        {
+            "id": 22,
+            "foodSubTypeId": null,
+            "parentFoodSubTypeVarietyId": 17,
+            "name": "Tubers"
+        },
+        {
+            "id": 23,
+            "foodSubTypeId": null,
+            "parentFoodSubTypeVarietyId": 17,
+            "name": "Bulbs"
+        },
+        {
+            "id": 24,
+            "foodSubTypeId": null,
+            "parentFoodSubTypeVarietyId": 17,
+            "name": "Other underground"
+        },
+        {
+            "id": 25,
+            "foodSubTypeId": null,
+            "parentFoodSubTypeVarietyId": 18,
+            "name": "Legumes"
+        },
+        {
+            "id": 26,
+            "foodSubTypeId": null,
+            "parentFoodSubTypeVarietyId": 18,
+            "name": "Vine-grown"
+        },
+        {
+            "id": 27,
+            "foodSubTypeId": null,
+            "parentFoodSubTypeVarietyId": 18,
+            "name": "Solanaceous"
+        },
+        {
+            "id": 28,
+            "foodSubTypeId": null,
+            "parentFoodSubTypeVarietyId": 18,
+            "name": "Other seeded"
+        },
+        {
+            "id": 29,
+            "foodSubTypeId": null,
+            "parentFoodSubTypeVarietyId": 20,
+            "name": "Flower"
+        },
+        {
+            "id": 30,
+            "foodSubTypeId": null,
+            "parentFoodSubTypeVarietyId": 20,
+            "name": "Leafy"
+        },
+        {
+            "id": 31,
+            "foodSubTypeId": null,
+            "parentFoodSubTypeVarietyId": 20,
+            "name": "Stem"
+        }
+    ]
+}
