@@ -1,0 +1,455 @@
+{
+    "foodProcessingTypes": [{
+            "id": 1,
+            "foodSubTypeId": 5,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": null,
+            "name": "Unpasteurized"
+        },
+        {
+            "id": 2,
+            "foodSubTypeId": 5,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": null,
+            "name": "Pasteurized"
+        },
+        {
+            "id": 3,
+            "foodSubTypeId": 6,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": null,
+            "name": "Unpasteurized"
+        },
+        {
+            "id": 4,
+            "foodSubTypeId": 6,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": null,
+            "name": "Pasteurized"
+        },
+        {
+            "id": 5,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 3,
+            "parentFoodProcessingTypeId": null,
+            "name": "Ready to eat"
+        },
+        {
+            "id": 6,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 3,
+            "parentFoodProcessingTypeId": null,
+            "name": "Raw otherwise processed"
+        },
+        {
+            "id": 7,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 4,
+            "parentFoodProcessingTypeId": null,
+            "name": "Ready to eat"
+        },
+        {
+            "id": 8,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 4,
+            "parentFoodProcessingTypeId": null,
+            "name": "Raw otherwise processed"
+        },
+        {
+            "id": 9,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 4,
+            "parentFoodProcessingTypeId": null,
+            "name": "Intact raw"
+        },
+        {
+            "id": 10,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 4,
+            "parentFoodProcessingTypeId": null,
+            "name": "Non-intact raw"
+        },
+        {
+            "id": 11,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 5,
+            "parentFoodProcessingTypeId": null,
+            "name": "Intact raw"
+        },
+        {
+            "id": 12,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 5,
+            "parentFoodProcessingTypeId": null,
+            "name": "Non-intact raw"
+        },
+        {
+            "id": 13,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 5,
+            "name": "Acidified/fermented"
+        },
+        {
+            "id": 14,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 5,
+            "name": "Dried"
+        },
+        {
+            "id": 15,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 5,
+            "name": "Salt-cured"
+        },
+        {
+            "id": 16,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 5,
+            "name": "Fully cooked"
+        },
+        {
+            "id": 17,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 16,
+            "name": "Hot dog products"
+        },
+        {
+            "id": 18,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 16,
+            "name": "Salad/spread/pate"
+        },
+        {
+            "id": 19,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 16,
+            "name": "Other fully-cooked sliced"
+        },
+        {
+            "id": 20,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 16,
+            "name": "Other fully-cooked not sliced"
+        },
+        {
+            "id": 21,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 16,
+            "name": "Diced/shredded"
+        },
+        {
+            "id": 22,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 16,
+            "name": "Patties/nuggets"
+        },
+        {
+            "id": 23,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 16,
+            "name": "Sausage products"
+        },
+        {
+            "id": 24,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 16,
+            "name": "Meat + nonmeat multicomponent"
+        },
+        {
+            "id": 25,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 16,
+            "name": "Thermal process/commercial sterile"
+        },
+        {
+            "id": 26,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 7,
+            "name": "Acidified/fermented"
+        },
+        {
+            "id": 27,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 7,
+            "name": "Dried"
+        },
+        {
+            "id": 28,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 7,
+            "name": "Salt-cured"
+        },
+        {
+            "id": 29,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 7,
+            "name": "Fully cooked"
+        },
+        {
+            "id": 30,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 29,
+            "name": "Hot dog products"
+        },
+        {
+            "id": 31,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 29,
+            "name": "Salad/spread/pate"
+        },
+        {
+            "id": 32,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 29,
+            "name": "Other fully-cooked sliced"
+        },
+        {
+            "id": 33,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 29,
+            "name": "Other fully-cooked not sliced"
+        },
+        {
+            "id": 34,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 29,
+            "name": "Diced/shredded"
+        },
+        {
+            "id": 35,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 29,
+            "name": "Patties/nuggets"
+        },
+        {
+            "id": 36,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 29,
+            "name": "Sausage products"
+        },
+        {
+            "id": 37,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 29,
+            "name": "Meat + nonmeat multicomponent"
+        },
+        {
+            "id": 38,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 29,
+            "name": "Thermal process/commercial sterile"
+        },
+        {
+            "id": 39,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 10,
+            "name": "Tenderized/injected meat"
+        },
+        {
+            "id": 40,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 10,
+            "name": "Ground meat"
+        },
+        {
+            "id": 41,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 12,
+            "name": "Tenderized/injected meat"
+        },
+        {
+            "id": 42,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 12,
+            "name": "Ground meat"
+        },
+        {
+            "id": 43,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 6,
+            "parentFoodProcessingTypeId": null,
+            "name": "Ready to eat"
+        },
+        {
+            "id": 44,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 6,
+            "parentFoodProcessingTypeId": null,
+            "name": "Raw otherwise processed"
+        },
+        {
+            "id": 45,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 7,
+            "parentFoodProcessingTypeId": null,
+            "name": "Ready to eat"
+        },
+        {
+            "id": 46,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 7,
+            "parentFoodProcessingTypeId": null,
+            "name": "Raw otherwise processed"
+        },
+        {
+            "id": 47,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 7,
+            "parentFoodProcessingTypeId": null,
+            "name": "Intact raw"
+        },
+        {
+            "id": 48,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 7,
+            "parentFoodProcessingTypeId": null,
+            "name": "Non-intact raw"
+        },
+        {
+            "id": 49,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 8,
+            "parentFoodProcessingTypeId": null,
+            "name": "Intact raw"
+        },
+        {
+            "id": 50,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 8,
+            "parentFoodProcessingTypeId": null,
+            "name": "Non-intact raw"
+        },
+        {
+            "id": 51,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 43,
+            "name": "Acidified/fermented"
+        },
+        {
+            "id": 52,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 43,
+            "name": "Dried"
+        },
+        {
+            "id": 53,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 43,
+            "name": "Salt-cured"
+        },
+        {
+            "id": 54,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 43,
+            "name": "Fully cooked"
+        },
+        {
+            "id": 55,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 54,
+            "name": "Hot dog products"
+        },
+        {
+            "id": 56,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 54,
+            "name": "Salad/spread/pate"
+        },
+        {
+            "id": 57,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 54,
+            "name": "Other fully-cooked sliced"
+        },
+        {
+            "id": 58,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 54,
+            "name": "Other fully-cooked not sliced"
+        },
+        {
+            "id": 59,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 54,
+            "name": "Diced/shredded"
+        },
+        {
+            "id": 60,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 54,
+            "name": "Patties/nuggets"
+        },
+        {
+            "id": 61,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 54,
+            "name": "Sausage products"
+        },
+        {
+            "id": 62,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 54,
+            "name": "Meat + nonmeat multicomponent"
+        },
+        {
+            "id": 63,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 54,
+            "name": "Thermal process/commercial sterile"
+        }
+
+
+
+
+        {
+            "id": null,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": null,
+            "name": null
+        }
+    ]
+}
