@@ -439,17 +439,776 @@
             "foodSubTypeVarietyId": null,
             "parentFoodProcessingTypeId": 54,
             "name": "Thermal process/commercial sterile"
-        }
-
-
-
-
+        },
         {
-            "id": null,
+            "id": 64,
             "foodSubTypeId": null,
             "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 45,
+            "name": "Acidified/fermented"
+        },
+        {
+            "id": 65,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 45,
+            "name": "Dried"
+        },
+        {
+            "id": 66,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 45,
+            "name": "Salt-cured"
+        },
+        {
+            "id": 67,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 45,
+            "name": "Fully cooked"
+        },
+        {
+            "id": 68,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 67,
+            "name": "Hot dog products"
+        },
+        {
+            "id": 69,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 67,
+            "name": "Salad/spread/pate"
+        },
+        {
+            "id": 70,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 67,
+            "name": "Other fully-cooked sliced"
+        },
+        {
+            "id": 71,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 67,
+            "name": "Other fully-cooked not sliced"
+        },
+        {
+            "id": 72,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 67,
+            "name": "Diced/shredded"
+        },
+        {
+            "id": 73,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 67,
+            "name": "Patties/nuggets"
+        },
+        {
+            "id": 74,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 67,
+            "name": "Sausage products"
+        },
+        {
+            "id": 75,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 67,
+            "name": "Meat + nonmeat multicomponent"
+        },
+        {
+            "id": 76,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 67,
+            "name": "Thermal process/commercial sterile"
+        },
+        {
+            "id": 77,
+            "foodSubTypeId": 9,
+            "foodSubTypeVarietyId": null,
             "parentFoodProcessingTypeId": null,
-            "name": null
+            "name": "Unpasteurized"
+        },
+        {
+            "id": 78,
+            "foodSubTypeId": 9,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": null,
+            "name": "Pasteurized"
+        },
+        {
+            "id": 79,
+            "foodSubTypeId": 10,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": null,
+            "name": "Egg substitues"
+        },
+        {
+            "id": 80,
+            "foodSubTypeId": 10,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": null,
+            "name": "Cooked egg products"
+        },
+        {
+            "id": 81,
+            "foodSubTypeId": 10,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": null,
+            "name": "Ready to eat egg products"
+        },
+        {
+            "id": 82,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 81,
+            "name": "Liquid or frozen"
+        },
+        {
+            "id": 83,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 81,
+            "name": "Dried"
+        },
+        {
+            "id": 84,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 9,
+            "parentFoodProcessingTypeId": null,
+            "name": "Frozen"
+        },
+        {
+            "id": 85,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 9,
+            "parentFoodProcessingTypeId": null,
+            "name": "Dried"
+        },
+        {
+            "id": 86,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 9,
+            "parentFoodProcessingTypeId": null,
+            "name": "Fresh-cut"
+        },
+        {
+            "id": 87,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 9,
+            "parentFoodProcessingTypeId": null,
+            "name": "Raw"
+        },
+        {
+            "id": 88,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 9,
+            "parentFoodProcessingTypeId": null,
+            "name": "Canned/containerized"
+        },
+        {
+            "id": 89,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 10,
+            "parentFoodProcessingTypeId": null,
+            "name": "Frozen"
+        },
+        {
+            "id": 90,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 10,
+            "parentFoodProcessingTypeId": null,
+            "name": "Dried"
+        },
+        {
+            "id": 91,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 10,
+            "parentFoodProcessingTypeId": null,
+            "name": "Fresh-cut"
+        },
+        {
+            "id": 92,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 10,
+            "parentFoodProcessingTypeId": null,
+            "name": "Raw"
+        },
+        {
+            "id": 93,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 10,
+            "parentFoodProcessingTypeId": null,
+            "name": "Canned/containerized"
+        },
+        {
+            "id": 94,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 11,
+            "parentFoodProcessingTypeId": null,
+            "name": "Frozen"
+        },
+        {
+            "id": 95,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 11,
+            "parentFoodProcessingTypeId": null,
+            "name": "Dried"
+        },
+        {
+            "id": 96,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 11,
+            "parentFoodProcessingTypeId": null,
+            "name": "Fresh-cut"
+        },
+        {
+            "id": 97,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 11,
+            "parentFoodProcessingTypeId": null,
+            "name": "Raw"
+        },
+        {
+            "id": 98,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 11,
+            "parentFoodProcessingTypeId": null,
+            "name": "Canned/containerized"
+        },
+        {
+            "id": 99,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 12,
+            "parentFoodProcessingTypeId": null,
+            "name": "Frozen"
+        },
+        {
+            "id": 100,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 12,
+            "parentFoodProcessingTypeId": null,
+            "name": "Dried"
+        },
+        {
+            "id": 101,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 12,
+            "parentFoodProcessingTypeId": null,
+            "name": "Fresh-cut"
+        },
+        {
+            "id": 102,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 12,
+            "parentFoodProcessingTypeId": null,
+            "name": "Raw"
+        },
+        {
+            "id": 103,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 12,
+            "parentFoodProcessingTypeId": null,
+            "name": "Canned/containerized"
+        },
+        {
+            "id": 104,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 13,
+            "parentFoodProcessingTypeId": null,
+            "name": "Frozen"
+        },
+        {
+            "id": 105,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 13,
+            "parentFoodProcessingTypeId": null,
+            "name": "Dried"
+        },
+        {
+            "id": 106,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 13,
+            "parentFoodProcessingTypeId": null,
+            "name": "Fresh-cut"
+        },
+        {
+            "id": 107,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 13,
+            "parentFoodProcessingTypeId": null,
+            "name": "Raw"
+        },
+        {
+            "id": 108,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 13,
+            "parentFoodProcessingTypeId": null,
+            "name": "Canned/containerized"
+        },
+        {
+            "id": 109,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 14,
+            "parentFoodProcessingTypeId": null,
+            "name": "Frozen"
+        },
+        {
+            "id": 110,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 14,
+            "parentFoodProcessingTypeId": null,
+            "name": "Dried"
+        },
+        {
+            "id": 111,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 14,
+            "parentFoodProcessingTypeId": null,
+            "name": "Fresh-cut"
+        },
+        {
+            "id": 112,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 14,
+            "parentFoodProcessingTypeId": null,
+            "name": "Raw"
+        },
+        {
+            "id": 113,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 14,
+            "parentFoodProcessingTypeId": null,
+            "name": "Canned/containerized"
+        },
+        {
+            "id": 114,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 15,
+            "parentFoodProcessingTypeId": null,
+            "name": "Fresh"
+        },
+        {
+            "id": 115,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 15,
+            "parentFoodProcessingTypeId": null,
+            "name": "Dried"
+        },
+        {
+            "id": 116,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 15,
+            "parentFoodProcessingTypeId": null,
+            "name": "Canned/containerized"
+        },
+        {
+            "id": 117,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 21,
+            "parentFoodProcessingTypeId": null,
+            "name": "Fresh"
+        },
+        {
+            "id": 118,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 21,
+            "parentFoodProcessingTypeId": null,
+            "name": "Canned/containerized"
+        },
+        {
+            "id": 119,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 22,
+            "parentFoodProcessingTypeId": null,
+            "name": "Fresh"
+        },
+        {
+            "id": 120,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 22,
+            "parentFoodProcessingTypeId": null,
+            "name": "Canned/containerized"
+        },
+        {
+            "id": 121,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 23,
+            "parentFoodProcessingTypeId": null,
+            "name": "Fresh"
+        },
+        {
+            "id": 122,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 23,
+            "parentFoodProcessingTypeId": null,
+            "name": "Canned/containerized"
+        },
+        {
+            "id": 123,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 24,
+            "parentFoodProcessingTypeId": null,
+            "name": "Fresh"
+        },
+        {
+            "id": 124,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 24,
+            "parentFoodProcessingTypeId": null,
+            "name": "Canned/containerized"
+        },
+        {
+            "id": 125,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 25,
+            "parentFoodProcessingTypeId": null,
+            "name": "Fresh"
+        },
+        {
+            "id": 126,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 25,
+            "parentFoodProcessingTypeId": null,
+            "name": "Canned/containerized"
+        },
+        {
+            "id": 127,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 25,
+            "parentFoodProcessingTypeId": null,
+            "name": "Frozen"
+        },
+        {
+            "id": 128,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 25,
+            "parentFoodProcessingTypeId": null,
+            "name": "Dried"
+        },
+        {
+            "id": 129,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 26,
+            "parentFoodProcessingTypeId": null,
+            "name": "Fresh"
+        },
+        {
+            "id": 130,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 26,
+            "parentFoodProcessingTypeId": null,
+            "name": "Canned/containerized"
+        },
+        {
+            "id": 131,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 26,
+            "parentFoodProcessingTypeId": null,
+            "name": "Frozen"
+        },
+        {
+            "id": 132,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 26,
+            "parentFoodProcessingTypeId": null,
+            "name": "Dried"
+        },
+        {
+            "id": 133,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 27,
+            "parentFoodProcessingTypeId": null,
+            "name": "Fresh"
+        },
+        {
+            "id": 134,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 27,
+            "parentFoodProcessingTypeId": null,
+            "name": "Canned/containerized"
+        },
+        {
+            "id": 135,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 27,
+            "parentFoodProcessingTypeId": null,
+            "name": "Frozen"
+        },
+        {
+            "id": 136,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 27,
+            "parentFoodProcessingTypeId": null,
+            "name": "Dried"
+        },
+        {
+            "id": 137,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 28,
+            "parentFoodProcessingTypeId": null,
+            "name": "Fresh"
+        },
+        {
+            "id": 138,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 28,
+            "parentFoodProcessingTypeId": null,
+            "name": "Canned/containerized"
+        },
+        {
+            "id": 139,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 28,
+            "parentFoodProcessingTypeId": null,
+            "name": "Frozen"
+        },
+        {
+            "id": 140,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 28,
+            "parentFoodProcessingTypeId": null,
+            "name": "Dried"
+        },
+        {
+            "id": 141,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 19,
+            "parentFoodProcessingTypeId": null,
+            "name": "Fresh herbs"
+        },
+        {
+            "id": 142,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 19,
+            "parentFoodProcessingTypeId": null,
+            "name": "Dried herbs"
+        },
+        {
+            "id": 143,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 19,
+            "parentFoodProcessingTypeId": null,
+            "name": "Teas"
+        },
+        {
+            "id": 144,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 29,
+            "parentFoodProcessingTypeId": null,
+            "name": "Fresh"
+        },
+        {
+            "id": 145,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 29,
+            "parentFoodProcessingTypeId": null,
+            "name": "Canned/containerized"
+        },
+        {
+            "id": 146,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 29,
+            "parentFoodProcessingTypeId": null,
+            "name": "Frozen"
+        },
+        {
+            "id": 147,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 29,
+            "parentFoodProcessingTypeId": null,
+            "name": "Dried"
+        },
+        {
+            "id": 148,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 30,
+            "parentFoodProcessingTypeId": null,
+            "name": "Fresh"
+        },
+        {
+            "id": 149,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 30,
+            "parentFoodProcessingTypeId": null,
+            "name": "Canned/containerized"
+        },
+        {
+            "id": 150,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 30,
+            "parentFoodProcessingTypeId": null,
+            "name": "Frozen"
+        },
+        {
+            "id": 151,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 30,
+            "parentFoodProcessingTypeId": null,
+            "name": "Dried"
+        },
+        {
+            "id": 152,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 31,
+            "parentFoodProcessingTypeId": null,
+            "name": "Fresh"
+        },
+        {
+            "id": 153,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 31,
+            "parentFoodProcessingTypeId": null,
+            "name": "Canned/containerized"
+        },
+        {
+            "id": 154,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 31,
+            "parentFoodProcessingTypeId": null,
+            "name": "Frozen"
+        },
+        {
+            "id": 155,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": 31,
+            "parentFoodProcessingTypeId": null,
+            "name": "Dried"
+        },
+        {
+            "id": 156,
+            "foodSubTypeId": 13,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": null,
+            "name": "Ground"
+        },
+        {
+            "id": 157,
+            "foodSubTypeId": 13,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": null,
+            "name": "Whole"
+        },
+        {
+            "id": 158,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 156,
+            "name": "Flour"
+        },
+        {
+            "id": 159,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 156,
+            "name": "Flour-based product"
+        },
+        {
+            "id": 160,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 159,
+            "name": "Breads"
+        },
+        {
+            "id": 161,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 159,
+            "name": "Doughs"
+        },
+        {
+            "id": 162,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 159,
+            "name": "Pastas"
+        },
+        {
+            "id": 163,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 159,
+            "name": "Prepared cereals"
+        },
+        {
+            "id": 164,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 159,
+            "name": "Cakes"
+        },
+        {
+            "id": 165,
+            "foodSubTypeId": null,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": 159,
+            "name": "Biscuits/cookies/wafers"
+        },
+        {
+            "id": 166,
+            "foodSubTypeId": 14,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": null,
+            "name": "Whole, dried"
+        },
+        {
+            "id": 167,
+            "foodSubTypeId": 14,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": null,
+            "name": "Canned/containerized"
+        },
+        {
+            "id": 168,
+            "foodSubTypeId": 14,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": null,
+            "name": "Ground, flour"
+        },
+        {
+            "id": 169,
+            "foodSubTypeId": 15,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": null,
+            "name": "Processed"
+        },
+        {
+            "id": 170,
+            "foodSubTypeId": 15,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": null,
+            "name": "Unprocessed"
+        },
+        {
+            "id": 171,
+            "foodSubTypeId": 16,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": null,
+            "name": "Crushed/cracked/ground"
+        },
+        {
+            "id": 172,
+            "foodSubTypeId": 16,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": null,
+            "name": "Whole, dried"
+        },
+        {
+            "id": 173,
+            "foodSubTypeId": 16,
+            "foodSubTypeVarietyId": null,
+            "parentFoodProcessingTypeId": null,
+            "name": "Paste"
         }
     ]
 }
