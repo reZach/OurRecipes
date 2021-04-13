@@ -4,6 +4,7 @@ C:\Users\zachary\source\repos\OurRecipes\Clients\OurRecipes.Driver\bin\Debug\net
 C:\Users\zachary\source\repos\OurRecipes\Clients\OurRecipes.Driver\bin\Debug\netcoreapp3.1\OurRecipes.Driver.runtimeconfig.dev.json
 C:\Users\zachary\source\repos\OurRecipes\Clients\OurRecipes.Driver\bin\Debug\netcoreapp3.1\OurRecipes.Driver.dll
 C:\Users\zachary\source\repos\OurRecipes\Clients\OurRecipes.Driver\bin\Debug\netcoreapp3.1\OurRecipes.Driver.pdb
+C:\Users\zachary\source\repos\OurRecipes\Clients\OurRecipes.Driver\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Users\zachary\source\repos\OurRecipes\Clients\OurRecipes.Driver\bin\Debug\netcoreapp3.1\Octokit.dll
 C:\Users\zachary\source\repos\OurRecipes\Clients\OurRecipes.Driver\bin\Debug\netcoreapp3.1\OurRecipes.dll
 C:\Users\zachary\source\repos\OurRecipes\Clients\OurRecipes.Driver\bin\Debug\netcoreapp3.1\OurRecipes.pdb
