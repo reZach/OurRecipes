@@ -13,31 +13,32 @@ namespace OurRecipes.Business
 {
     public class Client : IClient
     {
+        private readonly string _author = "reZach";
+        private readonly string _repo = "OurRecipes";
         private readonly string _entitiesPath = "Data/Entities/";
+        private readonly GitHubClient _githubClient;
 
         public Client()
         {
-
+            _githubClient = new GitHubClient(new ProductHeaderValue("OurRecipes"))
+            {
+                Credentials = new Credentials("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")
+            };
         }
 
         public async Task<int> Main()
         {
-            GitHubClient githubClient = new GitHubClient(new ProductHeaderValue("OurRecipes"))
-            {
-                Credentials = new Credentials("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")
-            };
-
             // pull raw
-            IReadOnlyList<RepositoryContent> foodGroupsRepo = await githubClient.Repository.Content.GetAllContents("reZach", "OurRecipes", $"{_entitiesPath}FoodGroup.json");
-            IReadOnlyList<RepositoryContent> foodMajorTypesRepo = await githubClient.Repository.Content.GetAllContents("reZach", "OurRecipes", $"{_entitiesPath}FoodMajorType.json");
-            IReadOnlyList<RepositoryContent> foodProcessingTypesRepo = await githubClient.Repository.Content.GetAllContents("reZach", "OurRecipes", $"{_entitiesPath}FoodProcessingType.json");
-            IReadOnlyList<RepositoryContent> foodSubTypesRepo = await githubClient.Repository.Content.GetAllContents("reZach", "OurRecipes", $"{_entitiesPath}FoodSubType.json");
-            IReadOnlyList<RepositoryContent> foodSubTypeVarietiesRepo = await githubClient.Repository.Content.GetAllContents("reZach", "OurRecipes", $"{_entitiesPath}FoodSubTypeVariety.json");
+            IReadOnlyList<RepositoryContent> foodGroupsRepo = await RetrieveFromAPI("FoodGroup");
+            IReadOnlyList<RepositoryContent> foodMajorTypesRepo = await RetrieveFromAPI("FoodMajorType");
+            IReadOnlyList<RepositoryContent> foodProcessingTypesRepo = await RetrieveFromAPI("FoodProcessingType");
+            IReadOnlyList<RepositoryContent> foodSubTypesRepo = await RetrieveFromAPI("FoodSubType");
+            IReadOnlyList<RepositoryContent> foodSubTypeVarietiesRepo = await RetrieveFromAPI("FoodSubTypeVariety");
 
-            IReadOnlyList<RepositoryContent> languagesRepo = await githubClient.Repository.Content.GetAllContents("reZach", "OurRecipes", $"{_entitiesPath}Languages.json");
-            IReadOnlyList<RepositoryContent> measurementsRepo = await githubClient.Repository.Content.GetAllContents("reZach", "OurRecipes", $"{_entitiesPath}Measurements.json");
-            IReadOnlyList<RepositoryContent> timesRepo = await githubClient.Repository.Content.GetAllContents("reZach", "OurRecipes", $"{_entitiesPath}Times.json");
-            IReadOnlyList<RepositoryContent> unitsRepo = await githubClient.Repository.Content.GetAllContents("reZach", "OurRecipes", $"{_entitiesPath}Units.json");
+            IReadOnlyList<RepositoryContent> languagesRepo = await RetrieveFromAPI("Languages");
+            IReadOnlyList<RepositoryContent> measurementsRepo = await RetrieveFromAPI("Measurements");
+            IReadOnlyList<RepositoryContent> timesRepo = await RetrieveFromAPI("Times");
+            IReadOnlyList<RepositoryContent> unitsRepo = await RetrieveFromAPI("Units");
 
             // cast
             FoodGroupAPIContainer foodGroupAPI = JsonConvert.DeserializeObject<FoodGroupAPIContainer>(foodGroupsRepo.ElementAt(0).Content);
@@ -126,6 +127,16 @@ namespace OurRecipes.Business
             }
 
             return 0;
+        }
+
+        /// <summary>
+        /// Queries the github api for the repository contents of a given <paramref name="filename"/> at <see cref="_entitiesPath"/>.
+        /// </summary>
+        /// <param name="filename"></param>
+        /// <returns></returns>
+        private async Task<IReadOnlyList<RepositoryContent>> RetrieveFromAPI(string filename)
+        {
+            return await _githubClient.Repository.Content.GetAllContents(_author, _repo, $"{_entitiesPath}{filename}.json");
         }
     }
 }
