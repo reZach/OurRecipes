@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Our Recipes" Height="450" Width="800">
     <Grid>
-        <Button Content="Update from Github" HorizontalAlignment="Left" Margin="28,380,0,0" VerticalAlignment="Top" Click="Button_Click" Width="136"/>
+        <Button Content="Update from Github" HorizontalAlignment="Left" Margin="28,380,0,0" VerticalAlignment="Top" Click="Button_Click" Width="136" Grid.ColumnSpan="2"/>
 
     </Grid>
 </Window>
