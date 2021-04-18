@@ -33,12 +33,29 @@ namespace UI
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            _client.Main();
+            
         }
 
         private void SaveToFile_Click(object sender, RoutedEventArgs e)
         {
 
         }
+
+        #region Menu
+        private async void MenuUpdate_Click(object sender, RoutedEventArgs e)
+        {
+            await _client.PullLatestFromGithub();
+        }
+
+        private void MenuExit_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
+
+        private void MenuRecipeNew_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        #endregion
     }
 }

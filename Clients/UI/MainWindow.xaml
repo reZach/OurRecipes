@@ -7,7 +7,14 @@
         mc:Ignorable="d"
         Title="Our Recipes" Height="450" Width="800">
     <Grid>
-        <Button Content="Update from Github" HorizontalAlignment="Left" Margin="28,380,0,0" VerticalAlignment="Top" Click="Button_Click" Width="136" Grid.ColumnSpan="2"/>
-
+        <Menu x:Name="Menu" Height="20" Width="Auto" VerticalAlignment="Top">
+            <MenuItem Header="_File">
+                <MenuItem Header="_Exit" Click="MenuExit_Click" />
+            </MenuItem>
+            <MenuItem Header="_Recipe">
+                <MenuItem Header="New" Click="MenuRecipeNew_Click" />
+            </MenuItem>
+            <MenuItem Header="_Update" Click="MenuUpdate_Click"></MenuItem>
+        </Menu>
     </Grid>
 </Window>

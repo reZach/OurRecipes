@@ -38,7 +38,7 @@ namespace OurRecipes.Business
         {
             _githubClient = new GitHubClient(new ProductHeaderValue("OurRecipes"))
             {
-                Credentials = new Credentials("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")
+                Credentials = new Credentials("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")
             };
         }
 
@@ -49,7 +49,8 @@ namespace OurRecipes.Business
 
             // Update the local data file
             if (localDataFile == null ||
-                string.IsNullOrEmpty(localDataFile.LatestCommit))
+                string.IsNullOrEmpty(localDataFile.LatestCommit) ||
+                !string.Equals(localDataFile.LatestCommit, commits.First().Sha, StringComparison.OrdinalIgnoreCase))
             {
                 // Pull from API
                 FoodGroupAPIContainer foodGroupAPI = await RetrieveContainerFromAPI<FoodGroupAPIContainer>("FoodGroups");
@@ -139,7 +140,7 @@ namespace OurRecipes.Business
 
                 localDataFile = new LocalDataFile
                 {
-                    LatestCommit = commits.ElementAt(0).Commit.Sha,
+                    LatestCommit = commits.First().Sha,
                     FoodGroups = _foodGroups.ToList(),
                     FoodMajorTypes = _foodMajorTypes.ToList(),
                     FoodProcessingTypes = _foodProcessingTypes.ToList(),
@@ -155,91 +156,7 @@ namespace OurRecipes.Business
 
         public async Task<int> Main()
         {
-            // pull raw
-            FoodGroupAPIContainer foodGroupAPI = await RetrieveContainerFromAPI<FoodGroupAPIContainer>("FoodGroups");
-            FoodMajorTypeAPIContainer foodMajorTypeAPI = await RetrieveContainerFromAPI<FoodMajorTypeAPIContainer>("FoodMajorTypes");
-            FoodProcessingTypeAPIContainer foodProcessingTypeAPI = await RetrieveContainerFromAPI<FoodProcessingTypeAPIContainer>("FoodProcessingTypes");
-            FoodSubTypeAPIContainer foodSubTypeAPI = await RetrieveContainerFromAPI<FoodSubTypeAPIContainer>("FoodSubTypes");
-            FoodSubTypeVarietyAPIContainer foodSubTypeVarietyAPI = await RetrieveContainerFromAPI<FoodSubTypeVarietyAPIContainer>("FoodSubTypeVarieties");
-
-            LanguageAPIContainer languageAPI = await RetrieveContainerFromAPI<LanguageAPIContainer>("Languages");
-            MeasurementAPIContainer measurementAPI = await RetrieveContainerFromAPI<MeasurementAPIContainer>("Measurements");
-            TimeAPIContainer timeAPI = await RetrieveContainerFromAPI<TimeAPIContainer>("Times");
-            UnitAPIContainer unitAPI = await RetrieveContainerFromAPI<UnitAPIContainer>("Units");
-
-            // convert
-            _foodGroups = foodGroupAPI.FoodGroups.Select(fg => new FoodGroup
-            {
-                Id = fg.Id,
-                Name = fg.Name
-            }).ToList();
-            IReadOnlyList<FoodMajorType> foodMajorTypes = foodMajorTypeAPI.FoodMajorTypes.Select(fmt => new FoodMajorType
-            {
-                Id = fmt.Id,
-                FoodGroup = _foodGroups.First(fg => fg.Id == fmt.FoodGroupId),
-                Name = fmt.Name
-            }).ToList();
-            IReadOnlyList<FoodSubType> foodSubTypes = foodSubTypeAPI.FoodSubTypes.Select(fst => new FoodSubType
-            {
-                Id = fst.Id,
-                FoodMajorType = foodMajorTypes.First(fmt => fmt.Id == fst.FoodMajorTypeId),
-                Name = fst.Name
-            }).ToList();
-            IReadOnlyCollection<FoodSubTypeVariety> foodSubTypeVarieties = foodSubTypeVarietyAPI.FoodSubTypeVarieties.Select(fstv => new FoodSubTypeVariety
-            {
-                Id = fstv.Id,
-                FoodSubType = foodSubTypes.FirstOrDefault(fst => fst.Id == fstv.FoodSubTypeId),
-                Name = fstv.Name
-            }).ToList();
-            IReadOnlyCollection<FoodProcessingType> foodProcessingTypes = foodProcessingTypeAPI.FoodProcessingTypes.Select(fpt => new FoodProcessingType
-            {
-                Id = fpt.Id,
-                FoodSubType = foodSubTypes.FirstOrDefault(fst => fst.Id == fpt.FoodSubTypeId),
-                FoodSubTypeVariety = foodSubTypeVarieties.FirstOrDefault(fstv => fstv.Id == fpt.FoodSubTypeVarieteyId),
-                Name = fpt.Name
-            }).ToList();
-
-            IReadOnlyList<Models.Language> languages = languageAPI.Languages.Select(l => new Models.Language
-            {
-                Id = l.Id,
-                Code = l.Code,
-                Name = l.Name
-            }).ToList();
-            IReadOnlyList<Unit> units = unitAPI.Units.Select(u => new Unit
-            {
-                Id = u.Id,
-                Language = languages.First(l => l.Id == u.LanguageId),
-                MetricSystem = u.MetricSystem,
-                Singular = u.Singular,
-                Plural = u.Plural,
-                AbbreviationSingle = u.AbbreviationSingle,
-                AbbreviationPlural = u.AbbreviationPlural
-            }).ToList();
-            IReadOnlyList<Measurement> measurements = measurementAPI.Measurements.Select(m => new Measurement
-            {
-                Id = m.Id,
-                Unit = units.First(u => u.Id == m.UnitId),
-                Amount = m.Amount,
-                MaxAmount = m.MaxAmount
-            }).ToList();
-            IReadOnlyList<Time> times = timeAPI.Times.Select(t => new Time
-            {
-                Id = t.Id,
-                Days = t.Days,
-                Hours = t.Hours,
-                Minutes = t.Minutes,
-                Seconds = t.Seconds
-            }).ToList();
-
-            // assign parents
-            foreach (FoodProcessingTypeAPI processingTypeAPI in foodProcessingTypeAPI.FoodProcessingTypes.Where(f => f.ParentFoodProcessingTypeId.HasValue))
-            {
-                foodProcessingTypes.First(fpt => fpt.Id == processingTypeAPI.Id).ParentFoodProcessingType = foodProcessingTypes.First(fpt2 => fpt2.Id == processingTypeAPI.ParentFoodProcessingTypeId.Value);
-            }
-            foreach (FoodSubTypeVarietyAPI subTypeVarietyAPI in foodSubTypeVarietyAPI.FoodSubTypeVarieties.Where(f => f.ParentFoodSubTypeVarietyId.HasValue))
-            {
-                foodSubTypeVarieties.First(fpt => fpt.Id == subTypeVarietyAPI.Id).ParentFoodSubTypeVariety = foodSubTypeVarieties.First(fpt2 => fpt2.Id == subTypeVarietyAPI.ParentFoodSubTypeVarietyId.Value);
-            }
+            await PullLatestFromGithub();
 
             return 0;
         }
