@@ -42,7 +42,7 @@ namespace OurRecipes.Business
             };
         }
 
-        public async Task<int> PullLatestFromGithub()
+        public async Task<bool> PullLatestFromGithub()
         {
             IReadOnlyList<GitHubCommit> commits = await _githubClient.Repository.Commit.GetAll(_author, _repo);
             LocalDataFile localDataFile = GetLocalDataFile();
@@ -140,9 +140,17 @@ namespace OurRecipes.Business
                 localDataFile = new LocalDataFile
                 {
                     LatestCommit = commits.ElementAt(0).Commit.Sha,
+                    FoodGroups = _foodGroups.ToList(),
+                    FoodMajorTypes = _foodMajorTypes.ToList(),
+                    FoodProcessingTypes = _foodProcessingTypes.ToList(),
+                    FoodSubTypes = _foodSubTypes.ToList(),
+                    FoodSubTypeVarieties = _foodSubTypeVarieties.ToList()
+                };
 
-                }
+                WriteLocalDataFile(localDataFile);
             }
+
+            return true;
         }
 
         public async Task<int> Main()
@@ -168,7 +176,7 @@ namespace OurRecipes.Business
             IReadOnlyList<FoodMajorType> foodMajorTypes = foodMajorTypeAPI.FoodMajorTypes.Select(fmt => new FoodMajorType
             {
                 Id = fmt.Id,
-                FoodGroup = foodGroups.First(fg => fg.Id == fmt.FoodGroupId),
+                FoodGroup = _foodGroups.First(fg => fg.Id == fmt.FoodGroupId),
                 Name = fmt.Name
             }).ToList();
             IReadOnlyList<FoodSubType> foodSubTypes = foodSubTypeAPI.FoodSubTypes.Select(fst => new FoodSubType

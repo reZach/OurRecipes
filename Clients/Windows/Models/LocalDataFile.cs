@@ -1,4 +1,5 @@
-﻿using OurRecipes.Models.API.IFSAC;
+﻿using OurRecipes.Models.IFSAC;
+using System.Collections.Generic;
 
 namespace OurRecipes.Models
 {
@@ -6,19 +7,19 @@ namespace OurRecipes.Models
     {
         public string LatestCommit { get; set; }
 
-        public FoodGroupAPIContainer FoodGroupAPIContainer { get; set; }
-        public FoodMajorTypeAPIContainer FoodMajorTypeAPIContainer { get; set; }
-        public FoodProcessingTypeAPIContainer FoodProcessingTypeAPIContainer { get; set; }
-        public FoodSubTypeAPIContainer FoodSubTypeAPIContainer { get; set; }
-        public FoodSubTypeVarietyAPIContainer FoodSubTypeVarietyAPIContainer { get; set; }
+        public List<FoodGroup> FoodGroups { get; set; }
+        public List<FoodMajorType> FoodMajorTypes { get; set; }
+        public List<FoodProcessingType> FoodProcessingTypes { get; set; }
+        public List<FoodSubType> FoodSubTypes { get; set; }
+        public List<FoodSubTypeVariety> FoodSubTypeVarieties { get; set; }
 
         public LocalDataFile()
         {
-            FoodGroupAPIContainer = new FoodGroupAPIContainer();
-            FoodMajorTypeAPIContainer = new FoodMajorTypeAPIContainer();
-            FoodProcessingTypeAPIContainer = new FoodProcessingTypeAPIContainer();
-            FoodSubTypeAPIContainer = new FoodSubTypeAPIContainer();
-            FoodSubTypeVarietyAPIContainer = new FoodSubTypeVarietyAPIContainer();
+            FoodGroups = new List<FoodGroup>();
+            FoodMajorTypes = new List<FoodMajorType>();
+            FoodProcessingTypes = new List<FoodProcessingType>();
+            FoodSubTypes = new List<FoodSubType>();
+            FoodSubTypeVarieties = new List<FoodSubTypeVariety>();
         }
     }
 }
