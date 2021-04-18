@@ -14,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using UI.Pages;
 
 namespace UI
 {
@@ -54,7 +55,8 @@ namespace UI
 
         private void MenuRecipeNew_Click(object sender, RoutedEventArgs e)
         {
-
+            NewRecipe newRecipePage = new NewRecipe();
+            Content = newRecipePage;
         }
         #endregion
     }
